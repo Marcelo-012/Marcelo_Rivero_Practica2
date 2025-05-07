@@ -1,11 +1,11 @@
- CREATE ROLE 'administrador';
+CREATE ROLE 'administrador';
 
- GRANT ALL PRIVILEGES ON mundo.* TO 'administrador';
+GRANT ALL PRIVILEGES ON mundo.* TO 'administrador';
  
- CREATE USER 'Emmanuel'@'localhost' IDENTIFIED BY 'Emmanuel012*';
+CREATE USER 'Emmanuel'@'localhost' IDENTIFIED BY 'Emmanuel012*';
 
-  GRANT 'administrador' TO 'nuevo_usuario'@'localhost';
+GRANT 'administrador' TO 'Emmanuel'@'localhost';
 
-  SET DEFAULT ROLE 'administrador' TO 'Emmanuel'@'localhost';
+SET DEFAULT ROLE 'administrador' TO 'Emmanuel'@'localhost';
 
 
